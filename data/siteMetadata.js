@@ -8,7 +8,7 @@ const siteMetadata = {
   description: `안녕하세요 "진짜" 가 되고 싶은 개발자의 아카이브에 오신 것을 환영합니다. 
     저는 FrontEnd에 꽤나 진심이며,  Deep 하게 공부하는 것을 목표로 아카이브를 운영하고 있습니다.
     잘 부탁 드립니다 ✋`,
-  startdescription: '게시글을 찾으려면, ⌘ + K 를 눌러 시작하세요!',
+  Archive: 'Archive',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',

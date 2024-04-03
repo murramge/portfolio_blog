@@ -1,6 +1,6 @@
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/logo.png'
+import Logo from '@/data/logos.svg'
 import Link from './Link'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
@@ -14,7 +14,7 @@ const Header = () => {
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
             <div className="mr-3">
-              <Image src={Logo} alt="image" width={50}></Image>
+              <Image src={Logo} width={50}></Image>
             </div>
             {typeof siteMetadata.headerTitle === 'string' ? (
               <div className="flex-col">
@@ -23,10 +23,7 @@ const Header = () => {
                 </div>
                 <div className="hidden w-28 pt-1 sm:block">
                   <a href="https://hits.seeyoufarm.com">
-                    <Image
-                      src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgjbae1212%2Fhit-counter&count_bg=%238F98DC&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitors&edge_flat=true"
-                      alt="visitor"
-                    ></Image>
+                    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgjbae1212%2Fhit-counter&count_bg=%238F98DC&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitors&edge_flat=true" />
                   </a>
                 </div>
               </div>
