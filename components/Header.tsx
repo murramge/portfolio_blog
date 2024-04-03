@@ -22,7 +22,7 @@ const Header = () => {
                 </div>
                 <div className="hidden w-28 pt-1 sm:block">
                   <a href="https://hits.seeyoufarm.com">
-                    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fmyblog-murramge-kangeunhwas-projects.vercel.app%2Fgjbae1212%2Fhit-counter&count_bg=%238F98DC&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitors&edge_flat=true" width={100} height={20}/>
+                    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fmyblog-murramge-kangeunhwas-projects.vercel.app%2Fgjbae1212%2Fhit-counter&count_bg=%238F98DC&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitors&edge_flat=true" alt="visitor" />
                   </a>
                 </div>
               </div>
