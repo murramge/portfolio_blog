@@ -5,9 +5,7 @@ const siteMetadata = {
   headerTitle: 'silvercoin.dev',
   helloself: 'Hi, I am ',
   myname: 'Eunhwa',
-  description: `안녕하세요 "진짜" 가 되고 싶은 개발자의 아카이브에 오신 것을 환영합니다. 
-    저는 FrontEnd에 꽤나 진심이며,  Deep 하게 공부하는 것을 목표로 아카이브를 운영하고 있습니다.
-    잘 부탁 드립니다 ✋`,
+  description: `안녕하세요! 다양한 프로젝트로 저의 역량과 열정을 알아볼 수 있는 포트폴리오 사이트입니다.`,
   Archive: 'Archive',
   language: 'en-us',
   theme: 'system', // system, dark or light
