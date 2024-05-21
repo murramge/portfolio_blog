@@ -9,7 +9,7 @@ import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
-import avatar from "@/data/avatar.png"
+import avatar from '@/data/avatar.png'
 
 const editUrl = (path) => `${siteMetadata.siteRepo}/blob/main/data/${path}`
 const discussUrl = (path) =>
@@ -76,17 +76,12 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                         <dt className="sr-only">Name</dt>
                         <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>
                         <dd>
-                          {author.github &&  (
+                          {author.github && (
                             <div>
-                              <Link
-                              href={author.github}
-                              className="text-maincolor "
-                            >
-                              <p>GitHub</p>
-                            </Link>
-                       
+                              <Link href={author.github} className="text-maincolor ">
+                                <p>GitHub</p>
+                              </Link>
                             </div>
-                     
                           )}
                         </dd>
                       </dl>
@@ -97,8 +92,6 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pb-8 pt-10 dark:prose-invert">{children}</div>
-              
-      
             </div>
             <footer>
               <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
