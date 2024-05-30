@@ -32,7 +32,43 @@
         "filePath": "authors/default.mdx",
         "toc": []
       },
-      "documentHash": "1717013452172",
+      "documentHash": "1717087442571",
+      "hasWarnings": false,
+      "documentTypeName": "Authors"
+    },
+    "authors/sparrowhawk.mdx": {
+      "document": {
+        "name": "Sparrow Hawk",
+        "avatar": "/static/images/sparrowhawk-avatar.jpg",
+        "occupation": "Wizard of Earthsea",
+        "company": "Earthsea",
+        "twitter": "https://twitter.com/sparrowhawk",
+        "linkedin": "https://www.linkedin.com/sparrowhawk",
+        "body": {
+          "raw": "\nAt birth, Ged was given the child-name Duny by his mother. He was born on the island of Gont, as a son of a bronzesmith. His mother died before he reached the age of one. As a small boy, Ged had overheard the village witch, his maternal aunt, using various words of power to call goats. Ged later used the words without an understanding of their meanings, to surprising effect.\n\nThe witch knew that using words of power effectively without understanding them required innate power, so she endeavored to teach him what little she knew. After learning more from her, he was able to call animals to him. Particularly, he was seen in the company of wild sparrowhawks so often that his \"use name\" became Sparrowhawk.\n",
+          "code": "var Component=(()=>{var m=Object.create;var o=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var g=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),k=(e,t)=>{for(var n in t)o(e,n,{get:t[n],enumerable:!0})},i=(e,t,n,s)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let r of p(t))!f.call(e,r)&&r!==n&&o(e,r,{get:()=>t[r],enumerable:!(s=l(t,r))||s.enumerable});return e};var x=(e,t,n)=>(n=e!=null?m(u(e)):{},i(t||!e||!e.__esModule?o(n,\"default\",{value:e,enumerable:!0}):n,e)),b=e=>i(o({},\"__esModule\",{value:!0}),e);var w=g((j,h)=>{h.exports=_jsx_runtime});var y={};k(y,{default:()=>d,frontmatter:()=>v});var a=x(w()),v={name:\"Sparrow Hawk\",avatar:\"/static/images/sparrowhawk-avatar.jpg\",occupation:\"Wizard of Earthsea\",company:\"Earthsea\",twitter:\"https://twitter.com/sparrowhawk\",linkedin:\"https://www.linkedin.com/sparrowhawk\"};function c(e){let t={p:\"p\",...e.components};return(0,a.jsxs)(a.Fragment,{children:[(0,a.jsx)(t.p,{children:\"At birth, Ged was given the child-name Duny by his mother. He was born on the island of Gont, as a son of a bronzesmith. His mother died before he reached the age of one. As a small boy, Ged had overheard the village witch, his maternal aunt, using various words of power to call goats. Ged later used the words without an understanding of their meanings, to surprising effect.\"}),(0,a.jsx)(t.p,{children:'The witch knew that using words of power effectively without understanding them required innate power, so she endeavored to teach him what little she knew. After learning more from her, he was able to call animals to him. Particularly, he was seen in the company of wild sparrowhawks so often that his \"use name\" became Sparrowhawk.'})]})}function d(e={}){let{wrapper:t}=e.components||{};return t?(0,a.jsx)(t,{...e,children:(0,a.jsx)(c,{...e})}):c(e)}return b(y);})();\n;return Component;"
+        },
+        "_id": "authors/sparrowhawk.mdx",
+        "_raw": {
+          "sourceFilePath": "authors/sparrowhawk.mdx",
+          "sourceFileName": "sparrowhawk.mdx",
+          "sourceFileDir": "authors",
+          "contentType": "mdx",
+          "flattenedPath": "authors/sparrowhawk"
+        },
+        "type": "Authors",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.63,
+          "time": 37800,
+          "words": 126
+        },
+        "slug": "sparrowhawk",
+        "path": "authors/sparrowhawk",
+        "filePath": "authors/sparrowhawk.mdx",
+        "toc": []
+      },
+      "documentHash": "1717073894907",
       "hasWarnings": false,
       "documentTypeName": "Authors"
     },
@@ -72,12 +108,12 @@
         "toc": [
           {
             "value": "Inline Highlighting",
-            "url": "#inline-highlighting-7",
+            "url": "#inline-highlighting",
             "depth": 2
           },
           {
             "value": "Code Blocks",
-            "url": "#code-blocks-7",
+            "url": "#code-blocks",
             "depth": 2
           }
         ],
@@ -92,7 +128,7 @@
           "url": "https://tailwind-nextjs-starter-blog.vercel.app/blog/code-sample"
         }
       },
-      "documentHash": "1717006373016",
+      "documentHash": "1717087442572",
       "hasWarnings": false,
       "documentTypeName": "Blog"
     },
@@ -132,17 +168,17 @@
         "toc": [
           {
             "value": "Introduction",
-            "url": "#introduction-37",
+            "url": "#introduction-1",
             "depth": 1
           },
           {
             "value": "Deriving the OLS Estimator",
-            "url": "#deriving-the-ols-estimator-7",
+            "url": "#deriving-the-ols-estimator",
             "depth": 1
           },
           {
             "value": "Least Squares",
-            "url": "#least-squares-7",
+            "url": "#least-squares",
             "depth": 2
           }
         ],
@@ -157,7 +193,7 @@
           "url": "https://tailwind-nextjs-starter-blog.vercel.app/blog/deriving-ols-estimator"
         }
       },
-      "documentHash": "1717006373016",
+      "documentHash": "1717087442572",
       "hasWarnings": false,
       "documentTypeName": "Blog"
     },
@@ -196,102 +232,102 @@
         "toc": [
           {
             "value": "Introduction",
-            "url": "#introduction-35",
+            "url": "#introduction-2",
             "depth": 1
           },
           {
             "value": "What is Markdown?",
-            "url": "#what-is-markdown-7",
+            "url": "#what-is-markdown",
             "depth": 1
           },
           {
             "value": "Syntax guide",
-            "url": "#syntax-guide-7",
+            "url": "#syntax-guide",
             "depth": 1
           },
           {
             "value": "Headers",
-            "url": "#headers-7",
+            "url": "#headers",
             "depth": 2
           },
           {
             "value": "This is a h1 tag",
-            "url": "#this-is-a-h1-tag-7",
+            "url": "#this-is-a-h1-tag",
             "depth": 1
           },
           {
             "value": "This is a h2 tag",
-            "url": "#this-is-a-h2-tag-7",
+            "url": "#this-is-a-h2-tag",
             "depth": 2
           },
           {
             "value": "This is a h4 tag",
-            "url": "#this-is-a-h4-tag-7",
+            "url": "#this-is-a-h4-tag",
             "depth": 4
           },
           {
             "value": "Emphasis",
-            "url": "#emphasis-7",
+            "url": "#emphasis",
             "depth": 2
           },
           {
             "value": "Lists",
-            "url": "#lists-7",
+            "url": "#lists",
             "depth": 2
           },
           {
             "value": "Unordered",
-            "url": "#unordered-7",
+            "url": "#unordered",
             "depth": 3
           },
           {
             "value": "Ordered",
-            "url": "#ordered-7",
+            "url": "#ordered",
             "depth": 3
           },
           {
             "value": "Images",
-            "url": "#images-7",
+            "url": "#images",
             "depth": 2
           },
           {
             "value": "Links",
-            "url": "#links-7",
+            "url": "#links",
             "depth": 2
           },
           {
             "value": "Blockquotes",
-            "url": "#blockquotes-7",
+            "url": "#blockquotes",
             "depth": 2
           },
           {
             "value": "Inline code",
-            "url": "#inline-code-7",
+            "url": "#inline-code",
             "depth": 2
           },
           {
             "value": "Syntax highlighting",
-            "url": "#syntax-highlighting-7",
+            "url": "#syntax-highlighting",
             "depth": 2
           },
           {
             "value": "Footnotes",
-            "url": "#footnotes-7",
+            "url": "#footnotes",
             "depth": 2
           },
           {
             "value": "Task Lists",
-            "url": "#task-lists-7",
+            "url": "#task-lists",
             "depth": 2
           },
           {
             "value": "Tables",
-            "url": "#tables-7",
+            "url": "#tables",
             "depth": 2
           },
           {
             "value": "Strikethrough",
-            "url": "#strikethrough-7",
+            "url": "#strikethrough",
             "depth": 2
           }
         ],
@@ -306,7 +342,7 @@
           "url": "https://tailwind-nextjs-starter-blog.vercel.app/blog/github-markdown-guide"
         }
       },
-      "documentHash": "1717006373017",
+      "documentHash": "1717087442572",
       "hasWarnings": false,
       "documentTypeName": "Blog"
     },
@@ -348,22 +384,22 @@
         "toc": [
           {
             "value": "Introduction",
-            "url": "#introduction-36",
+            "url": "#introduction",
             "depth": 1
           },
           {
             "value": "Usage",
-            "url": "#usage-7",
+            "url": "#usage",
             "depth": 1
           },
           {
             "value": "Benefits",
-            "url": "#benefits-7",
+            "url": "#benefits",
             "depth": 1
           },
           {
             "value": "Limitations",
-            "url": "#limitations-7",
+            "url": "#limitations",
             "depth": 1
           }
         ],
@@ -378,7 +414,7 @@
           "url": "https://tailwind-nextjs-starter-blog.vercel.app/blog/guide-to-using-images-in-nextjs"
         }
       },
-      "documentHash": "1717006373017",
+      "documentHash": "1717087442573",
       "hasWarnings": false,
       "documentTypeName": "Blog"
     },
@@ -427,72 +463,72 @@
         "toc": [
           {
             "value": "Tailwind Nextjs Starter Blog",
-            "url": "#tailwind-nextjs-starter-blog-7",
+            "url": "#tailwind-nextjs-starter-blog",
             "depth": 1
           },
           {
             "value": "Examples",
-            "url": "#examples-7",
+            "url": "#examples",
             "depth": 2
           },
           {
             "value": "Motivation",
-            "url": "#motivation-7",
+            "url": "#motivation",
             "depth": 2
           },
           {
             "value": "Features",
-            "url": "#features-7",
+            "url": "#features",
             "depth": 2
           },
           {
             "value": "Sample posts",
-            "url": "#sample-posts-7",
+            "url": "#sample-posts",
             "depth": 2
           },
           {
             "value": "Quick Start Guide",
-            "url": "#quick-start-guide-7",
+            "url": "#quick-start-guide",
             "depth": 2
           },
           {
             "value": "Development",
-            "url": "#development-7",
+            "url": "#development",
             "depth": 2
           },
           {
             "value": "Extend / Customize",
-            "url": "#extend--customize-7",
+            "url": "#extend--customize",
             "depth": 2
           },
           {
             "value": "Post",
-            "url": "#post-7",
+            "url": "#post",
             "depth": 2
           },
           {
             "value": "Frontmatter",
-            "url": "#frontmatter-7",
+            "url": "#frontmatter",
             "depth": 3
           },
           {
             "value": "Compose",
-            "url": "#compose-7",
+            "url": "#compose",
             "depth": 3
           },
           {
             "value": "Deploy",
-            "url": "#deploy-7",
+            "url": "#deploy",
             "depth": 2
           },
           {
             "value": "Support",
-            "url": "#support-14",
+            "url": "#support",
             "depth": 2
           },
           {
             "value": "Licence",
-            "url": "#licence-14",
+            "url": "#licence",
             "depth": 2
           }
         ],
@@ -507,7 +543,7 @@
           "url": "https://tailwind-nextjs-starter-blog.vercel.app/blog/introducing-tailwind-nextjs-starter-blog"
         }
       },
-      "documentHash": "1717006373017",
+      "documentHash": "1717087442573",
       "hasWarnings": false,
       "documentTypeName": "Blog"
     },
@@ -554,7 +590,7 @@
           "url": "https://tailwind-nextjs-starter-blog.vercel.app/blog/my-fancy-title"
         }
       },
-      "documentHash": "1717006373017",
+      "documentHash": "1717087442573",
       "hasWarnings": false,
       "documentTypeName": "Blog"
     },
@@ -597,92 +633,92 @@
         "toc": [
           {
             "value": "Overview",
-            "url": "#overview-7",
+            "url": "#overview",
             "depth": 2
           },
           {
             "value": "Theme colors",
-            "url": "#theme-colors-7",
+            "url": "#theme-colors",
             "depth": 2
           },
           {
             "value": "Xdm MDX compiler",
-            "url": "#xdm-mdx-compiler-7",
+            "url": "#xdm-mdx-compiler",
             "depth": 2
           },
           {
             "value": "Table of contents component",
-            "url": "#table-of-contents-component-7",
+            "url": "#table-of-contents-component",
             "depth": 2
           },
           {
             "value": "Layouts",
-            "url": "#layouts-7",
+            "url": "#layouts",
             "depth": 2
           },
           {
             "value": "Adding new templates",
-            "url": "#adding-new-templates-7",
+            "url": "#adding-new-templates",
             "depth": 3
           },
           {
             "value": "Configuring a blog post frontmatter",
-            "url": "#configuring-a-blog-post-frontmatter-7",
+            "url": "#configuring-a-blog-post-frontmatter",
             "depth": 3
           },
           {
             "value": "Extend",
-            "url": "#extend-7",
+            "url": "#extend",
             "depth": 3
           },
           {
             "value": "Analytics",
-            "url": "#analytics-7",
+            "url": "#analytics",
             "depth": 2
           },
           {
             "value": "Blog comments system",
-            "url": "#blog-comments-system-7",
+            "url": "#blog-comments-system",
             "depth": 2
           },
           {
             "value": "Multiple authors",
-            "url": "#multiple-authors-7",
+            "url": "#multiple-authors",
             "depth": 2
           },
           {
             "value": "Multiple authors in blog post",
-            "url": "#multiple-authors-in-blog-post-7",
+            "url": "#multiple-authors-in-blog-post",
             "depth": 3
           },
           {
             "value": "Copy button for code blocks",
-            "url": "#copy-button-for-code-blocks-7",
+            "url": "#copy-button-for-code-blocks",
             "depth": 2
           },
           {
             "value": "Line highlighting and line numbers",
-            "url": "#line-highlighting-and-line-numbers-7",
+            "url": "#line-highlighting-and-line-numbers",
             "depth": 2
           },
           {
             "value": "Newletter component (v1.1.3)",
-            "url": "#newletter-component-v113-7",
+            "url": "#newletter-component-v113",
             "depth": 2
           },
           {
             "value": "Bibliography and Citations (v1.2.1)",
-            "url": "#bibliography-and-citations-v121-7",
+            "url": "#bibliography-and-citations-v121",
             "depth": 2
           },
           {
             "value": "Self-hosted font (v1.5.0)",
-            "url": "#self-hosted-font-v150-7",
+            "url": "#self-hosted-font-v150",
             "depth": 2
           },
           {
             "value": "Upgrade guide",
-            "url": "#upgrade-guide-7",
+            "url": "#upgrade-guide",
             "depth": 2
           }
         ],
@@ -697,7 +733,7 @@
           "url": "https://tailwind-nextjs-starter-blog.vercel.app/blog/new-features-in-v1"
         }
       },
-      "documentHash": "1717006373018",
+      "documentHash": "1717087442574",
       "hasWarnings": false,
       "documentTypeName": "Blog"
     },
@@ -741,17 +777,17 @@
         "toc": [
           {
             "value": "Gallery",
-            "url": "#gallery-7",
+            "url": "#gallery",
             "depth": 1
           },
           {
             "value": "Implementation",
-            "url": "#implementation-7",
+            "url": "#implementation",
             "depth": 1
           },
           {
             "value": "Photo Credits",
-            "url": "#photo-credits-7",
+            "url": "#photo-credits",
             "depth": 3
           }
         ],
@@ -766,7 +802,7 @@
           "url": "https://tailwind-nextjs-starter-blog.vercel.app/blog/pictures-of-canada"
         }
       },
-      "documentHash": "1717006373018",
+      "documentHash": "1717087442574",
       "hasWarnings": false,
       "documentTypeName": "Blog"
     },
@@ -811,82 +847,82 @@
         "toc": [
           {
             "value": "Introduction",
-            "url": "#introduction-38",
+            "url": "#introduction-4",
             "depth": 2
           },
           {
             "value": "V1 to V2",
-            "url": "#v1-to-v2-7",
+            "url": "#v1-to-v2",
             "depth": 2
           },
           {
             "value": "Next.js App Directory and React Server Components",
-            "url": "#nextjs-app-directory-and-react-server-components-7",
+            "url": "#nextjs-app-directory-and-react-server-components",
             "depth": 2
           },
           {
             "value": "Typescript First",
-            "url": "#typescript-first-7",
+            "url": "#typescript-first",
             "depth": 2
           },
           {
             "value": "Contentlayer",
-            "url": "#contentlayer-7",
+            "url": "#contentlayer",
             "depth": 2
           },
           {
             "value": "Pliny",
-            "url": "#pliny-7",
+            "url": "#pliny",
             "depth": 2
           },
           {
             "value": "New Search Component",
-            "url": "#new-search-component-7",
+            "url": "#new-search-component",
             "depth": 2
           },
           {
             "value": "Algolia",
-            "url": "#algolia-7",
+            "url": "#algolia",
             "depth": 3
           },
           {
             "value": "Kbar",
-            "url": "#kbar-7",
+            "url": "#kbar",
             "depth": 3
           },
           {
             "value": "Styling and Layout Updates",
-            "url": "#styling-and-layout-updates-7",
+            "url": "#styling-and-layout-updates",
             "depth": 2
           },
           {
             "value": "Theming",
-            "url": "#theming-7",
+            "url": "#theming",
             "depth": 3
           },
           {
             "value": "New Layouts",
-            "url": "#new-layouts-7",
+            "url": "#new-layouts",
             "depth": 3
           },
           {
             "value": "Migration Recommendations",
-            "url": "#migration-recommendations-7",
+            "url": "#migration-recommendations",
             "depth": 2
           },
           {
             "value": "Conclusion",
-            "url": "#conclusion-7",
+            "url": "#conclusion",
             "depth": 2
           },
           {
             "value": "Support",
-            "url": "#support-15",
+            "url": "#support-1",
             "depth": 2
           },
           {
             "value": "Licence",
-            "url": "#licence-15",
+            "url": "#licence-1",
             "depth": 2
           }
         ],
@@ -901,7 +937,7 @@
           "url": "https://tailwind-nextjs-starter-blog.vercel.app/blog/release-of-tailwind-nextjs-starter-blog-v2.0"
         }
       },
-      "documentHash": "1717006373018",
+      "documentHash": "1717087442574",
       "hasWarnings": false,
       "documentTypeName": "Blog"
     },
@@ -941,12 +977,12 @@
         "toc": [
           {
             "value": "The Time Machine by H. G. Wells",
-            "url": "#the-time-machine-by-h-g-wells-8",
+            "url": "#the-time-machine-by-h-g-wells",
             "depth": 1
           },
           {
             "value": "Introduction",
-            "url": "#introduction-40",
+            "url": "#introduction-3",
             "depth": 2
           }
         ],
@@ -961,77 +997,7 @@
           "url": "https://tailwind-nextjs-starter-blog.vercel.app/blog/the-time-machine"
         }
       },
-      "documentHash": "1717013583207",
-      "hasWarnings": false,
-      "documentTypeName": "Blog"
-    },
-    "blog/nested-route/introducing-multi-part-posts-with-nested-routing.mdx": {
-      "document": {
-        "title": "Introducing Multi-part Posts with Nested Routing",
-        "date": "2021-05-02T00:00:00.000Z",
-        "tags": [
-          "multi-author",
-          "next-js",
-          "feature"
-        ],
-        "draft": false,
-        "summary": "The blog template supports posts in nested sub-folders. This can be used to group posts of similar content e.g. a multi-part course. This post is itself an example of a nested route!",
-        "body": {
-          "raw": "\n# Nested Routes\n\nThe blog template supports posts in nested sub-folders. This helps in organisation and can be used to group posts of similar content e.g. a multi-part series. This post is itself an example of a nested route! It's located in the `/data/blog/nested-route` folder.\n\n## How\n\nSimplify create multiple folders inside the main `/data/blog` folder and add your `.md`/`.mdx` files to them. You can even create something like `/data/blog/nested-route/deeply-nested-route/my-post.md`\n\nWe use Next.js catch all routes to handle the routing and path creations.\n\n## Use Cases\n\nHere are some reasons to use nested routes\n\n- More logical content organisation (blogs will still be displayed based on the created date)\n- Multi-part posts\n- Different sub-routes for each author\n- Internationalization (though it would be recommended to use [Next.js built-in i8n routing](https://nextjs.org/docs/advanced-features/i18n-routing))\n\n## Note\n\n- The previous/next post links at bottom of the template are currently sorted by date. One could explore modifying the template to refer the reader to the previous/next post in the series, rather than by date.\n",
-          "code": "var Component=(()=>{var u=Object.create;var s=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var w=(a,e)=>()=>(e||a((e={exports:{}}).exports,e),e.exports),x=(a,e)=>{for(var n in e)s(a,n,{get:e[n],enumerable:!0})},o=(a,e,n,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let l of m(e))!f.call(a,l)&&l!==n&&s(a,l,{get:()=>e[l],enumerable:!(r=p(e,l))||r.enumerable});return a};var b=(a,e,n)=>(n=a!=null?u(g(a)):{},o(e||!a||!a.__esModule?s(n,\"default\",{value:a,enumerable:!0}):n,a)),v=a=>o(s({},\"__esModule\",{value:!0}),a);var d=w((k,i)=>{i.exports=_jsx_runtime});var M={};x(M,{default:()=>c,frontmatter:()=>N});var t=b(d()),N={title:\"Introducing Multi-part Posts with Nested Routing\",date:\"2021-05-02\",tags:[\"multi-author\",\"next-js\",\"feature\"],draft:!1,summary:\"The blog template supports posts in nested sub-folders. This can be used to group posts of similar content e.g. a multi-part course. This post is itself an example of a nested route!\"};function h(a){let e={a:\"a\",code:\"code\",h1:\"h1\",h2:\"h2\",li:\"li\",p:\"p\",path:\"path\",span:\"span\",svg:\"svg\",ul:\"ul\",...a.components};return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsxs)(e.h1,{className:\"content-header\",id:\"nested-routes\",children:[(0,t.jsx)(e.a,{href:\"#nested-routes\",\"aria-hidden\":\"true\",tabIndex:\"-1\",children:(0,t.jsx)(t.Fragment,{children:(0,t.jsx)(e.span,{className:\"content-header-link\",children:(0,t.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,t.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,t.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"Nested Routes\"]}),(0,t.jsxs)(e.p,{children:[\"The blog template supports posts in nested sub-folders. This helps in organisation and can be used to group posts of similar content e.g. a multi-part series. This post is itself an example of a nested route! It's located in the \",(0,t.jsx)(e.code,{children:\"/data/blog/nested-route\"}),\" folder.\"]}),(0,t.jsxs)(e.h2,{className:\"content-header\",id:\"how\",children:[(0,t.jsx)(e.a,{href:\"#how\",\"aria-hidden\":\"true\",tabIndex:\"-1\",children:(0,t.jsx)(t.Fragment,{children:(0,t.jsx)(e.span,{className:\"content-header-link\",children:(0,t.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,t.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,t.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"How\"]}),(0,t.jsxs)(e.p,{children:[\"Simplify create multiple folders inside the main \",(0,t.jsx)(e.code,{children:\"/data/blog\"}),\" folder and add your \",(0,t.jsx)(e.code,{children:\".md\"}),\"/\",(0,t.jsx)(e.code,{children:\".mdx\"}),\" files to them. You can even create something like \",(0,t.jsx)(e.code,{children:\"/data/blog/nested-route/deeply-nested-route/my-post.md\"})]}),(0,t.jsx)(e.p,{children:\"We use Next.js catch all routes to handle the routing and path creations.\"}),(0,t.jsxs)(e.h2,{className:\"content-header\",id:\"use-cases\",children:[(0,t.jsx)(e.a,{href:\"#use-cases\",\"aria-hidden\":\"true\",tabIndex:\"-1\",children:(0,t.jsx)(t.Fragment,{children:(0,t.jsx)(e.span,{className:\"content-header-link\",children:(0,t.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,t.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,t.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"Use Cases\"]}),(0,t.jsx)(e.p,{children:\"Here are some reasons to use nested routes\"}),(0,t.jsxs)(e.ul,{children:[(0,t.jsx)(e.li,{children:\"More logical content organisation (blogs will still be displayed based on the created date)\"}),(0,t.jsx)(e.li,{children:\"Multi-part posts\"}),(0,t.jsx)(e.li,{children:\"Different sub-routes for each author\"}),(0,t.jsxs)(e.li,{children:[\"Internationalization (though it would be recommended to use \",(0,t.jsx)(e.a,{href:\"https://nextjs.org/docs/advanced-features/i18n-routing\",children:\"Next.js built-in i8n routing\"}),\")\"]})]}),(0,t.jsxs)(e.h2,{className:\"content-header\",id:\"note\",children:[(0,t.jsx)(e.a,{href:\"#note\",\"aria-hidden\":\"true\",tabIndex:\"-1\",children:(0,t.jsx)(t.Fragment,{children:(0,t.jsx)(e.span,{className:\"content-header-link\",children:(0,t.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,t.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,t.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"Note\"]}),(0,t.jsx)(e.ul,{children:(0,t.jsx)(e.li,{children:\"The previous/next post links at bottom of the template are currently sorted by date. One could explore modifying the template to refer the reader to the previous/next post in the series, rather than by date.\"})})]})}function c(a={}){let{wrapper:e}=a.components||{};return e?(0,t.jsx)(e,{...a,children:(0,t.jsx)(h,{...a})}):h(a)}return v(M);})();\n;return Component;"
-        },
-        "_id": "blog/nested-route/introducing-multi-part-posts-with-nested-routing.mdx",
-        "_raw": {
-          "sourceFilePath": "blog/nested-route/introducing-multi-part-posts-with-nested-routing.mdx",
-          "sourceFileName": "introducing-multi-part-posts-with-nested-routing.mdx",
-          "sourceFileDir": "blog/nested-route",
-          "contentType": "mdx",
-          "flattenedPath": "blog/nested-route/introducing-multi-part-posts-with-nested-routing"
-        },
-        "type": "Blog",
-        "readingTime": {
-          "text": "1 min read",
-          "minutes": 0.845,
-          "time": 50700,
-          "words": 169
-        },
-        "slug": "nested-route/introducing-multi-part-posts-with-nested-routing",
-        "path": "blog/nested-route/introducing-multi-part-posts-with-nested-routing",
-        "filePath": "blog/nested-route/introducing-multi-part-posts-with-nested-routing.mdx",
-        "toc": [
-          {
-            "value": "Nested Routes",
-            "url": "#nested-routes-7",
-            "depth": 1
-          },
-          {
-            "value": "How",
-            "url": "#how-7",
-            "depth": 2
-          },
-          {
-            "value": "Use Cases",
-            "url": "#use-cases-7",
-            "depth": 2
-          },
-          {
-            "value": "Note",
-            "url": "#note-7",
-            "depth": 2
-          }
-        ],
-        "structuredData": {
-          "@context": "https://schema.org",
-          "@type": "BlogPosting",
-          "headline": "Introducing Multi-part Posts with Nested Routing",
-          "datePublished": "2021-05-02T00:00:00.000Z",
-          "dateModified": "2021-05-02T00:00:00.000Z",
-          "description": "The blog template supports posts in nested sub-folders. This can be used to group posts of similar content e.g. a multi-part course. This post is itself an example of a nested route!",
-          "image": "/static/images/twitter-card.png",
-          "url": "https://tailwind-nextjs-starter-blog.vercel.app/blog/nested-route/introducing-multi-part-posts-with-nested-routing"
-        }
-      },
-      "documentHash": "1717006373018",
+      "documentHash": "1717087442574",
       "hasWarnings": false,
       "documentTypeName": "Blog"
     },
@@ -1075,7 +1041,7 @@
           "url": "https://tailwind-nextjs-starter-blog.vercel.app/blog/gonggam/intro"
         }
       },
-      "documentHash": "1717048786528",
+      "documentHash": "1717087442573",
       "hasWarnings": false,
       "documentTypeName": "Blog"
     },
@@ -1119,7 +1085,77 @@
           "url": "https://tailwind-nextjs-starter-blog.vercel.app/blog/gonggam/one_pages"
         }
       },
-      "documentHash": "1717058253907",
+      "documentHash": "1717087442573",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/nested-route/introducing-multi-part-posts-with-nested-routing.mdx": {
+      "document": {
+        "title": "Introducing Multi-part Posts with Nested Routing",
+        "date": "2021-05-02T00:00:00.000Z",
+        "tags": [
+          "multi-author",
+          "next-js",
+          "feature"
+        ],
+        "draft": false,
+        "summary": "The blog template supports posts in nested sub-folders. This can be used to group posts of similar content e.g. a multi-part course. This post is itself an example of a nested route!",
+        "body": {
+          "raw": "\n# Nested Routes\n\nThe blog template supports posts in nested sub-folders. This helps in organisation and can be used to group posts of similar content e.g. a multi-part series. This post is itself an example of a nested route! It's located in the `/data/blog/nested-route` folder.\n\n## How\n\nSimplify create multiple folders inside the main `/data/blog` folder and add your `.md`/`.mdx` files to them. You can even create something like `/data/blog/nested-route/deeply-nested-route/my-post.md`\n\nWe use Next.js catch all routes to handle the routing and path creations.\n\n## Use Cases\n\nHere are some reasons to use nested routes\n\n- More logical content organisation (blogs will still be displayed based on the created date)\n- Multi-part posts\n- Different sub-routes for each author\n- Internationalization (though it would be recommended to use [Next.js built-in i8n routing](https://nextjs.org/docs/advanced-features/i18n-routing))\n\n## Note\n\n- The previous/next post links at bottom of the template are currently sorted by date. One could explore modifying the template to refer the reader to the previous/next post in the series, rather than by date.\n",
+          "code": "var Component=(()=>{var u=Object.create;var s=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var w=(a,e)=>()=>(e||a((e={exports:{}}).exports,e),e.exports),x=(a,e)=>{for(var n in e)s(a,n,{get:e[n],enumerable:!0})},o=(a,e,n,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let l of m(e))!f.call(a,l)&&l!==n&&s(a,l,{get:()=>e[l],enumerable:!(r=p(e,l))||r.enumerable});return a};var b=(a,e,n)=>(n=a!=null?u(g(a)):{},o(e||!a||!a.__esModule?s(n,\"default\",{value:a,enumerable:!0}):n,a)),v=a=>o(s({},\"__esModule\",{value:!0}),a);var d=w((k,i)=>{i.exports=_jsx_runtime});var M={};x(M,{default:()=>c,frontmatter:()=>N});var t=b(d()),N={title:\"Introducing Multi-part Posts with Nested Routing\",date:\"2021-05-02\",tags:[\"multi-author\",\"next-js\",\"feature\"],draft:!1,summary:\"The blog template supports posts in nested sub-folders. This can be used to group posts of similar content e.g. a multi-part course. This post is itself an example of a nested route!\"};function h(a){let e={a:\"a\",code:\"code\",h1:\"h1\",h2:\"h2\",li:\"li\",p:\"p\",path:\"path\",span:\"span\",svg:\"svg\",ul:\"ul\",...a.components};return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsxs)(e.h1,{className:\"content-header\",id:\"nested-routes\",children:[(0,t.jsx)(e.a,{href:\"#nested-routes\",\"aria-hidden\":\"true\",tabIndex:\"-1\",children:(0,t.jsx)(t.Fragment,{children:(0,t.jsx)(e.span,{className:\"content-header-link\",children:(0,t.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,t.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,t.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"Nested Routes\"]}),(0,t.jsxs)(e.p,{children:[\"The blog template supports posts in nested sub-folders. This helps in organisation and can be used to group posts of similar content e.g. a multi-part series. This post is itself an example of a nested route! It's located in the \",(0,t.jsx)(e.code,{children:\"/data/blog/nested-route\"}),\" folder.\"]}),(0,t.jsxs)(e.h2,{className:\"content-header\",id:\"how\",children:[(0,t.jsx)(e.a,{href:\"#how\",\"aria-hidden\":\"true\",tabIndex:\"-1\",children:(0,t.jsx)(t.Fragment,{children:(0,t.jsx)(e.span,{className:\"content-header-link\",children:(0,t.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,t.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,t.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"How\"]}),(0,t.jsxs)(e.p,{children:[\"Simplify create multiple folders inside the main \",(0,t.jsx)(e.code,{children:\"/data/blog\"}),\" folder and add your \",(0,t.jsx)(e.code,{children:\".md\"}),\"/\",(0,t.jsx)(e.code,{children:\".mdx\"}),\" files to them. You can even create something like \",(0,t.jsx)(e.code,{children:\"/data/blog/nested-route/deeply-nested-route/my-post.md\"})]}),(0,t.jsx)(e.p,{children:\"We use Next.js catch all routes to handle the routing and path creations.\"}),(0,t.jsxs)(e.h2,{className:\"content-header\",id:\"use-cases\",children:[(0,t.jsx)(e.a,{href:\"#use-cases\",\"aria-hidden\":\"true\",tabIndex:\"-1\",children:(0,t.jsx)(t.Fragment,{children:(0,t.jsx)(e.span,{className:\"content-header-link\",children:(0,t.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,t.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,t.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"Use Cases\"]}),(0,t.jsx)(e.p,{children:\"Here are some reasons to use nested routes\"}),(0,t.jsxs)(e.ul,{children:[(0,t.jsx)(e.li,{children:\"More logical content organisation (blogs will still be displayed based on the created date)\"}),(0,t.jsx)(e.li,{children:\"Multi-part posts\"}),(0,t.jsx)(e.li,{children:\"Different sub-routes for each author\"}),(0,t.jsxs)(e.li,{children:[\"Internationalization (though it would be recommended to use \",(0,t.jsx)(e.a,{href:\"https://nextjs.org/docs/advanced-features/i18n-routing\",children:\"Next.js built-in i8n routing\"}),\")\"]})]}),(0,t.jsxs)(e.h2,{className:\"content-header\",id:\"note\",children:[(0,t.jsx)(e.a,{href:\"#note\",\"aria-hidden\":\"true\",tabIndex:\"-1\",children:(0,t.jsx)(t.Fragment,{children:(0,t.jsx)(e.span,{className:\"content-header-link\",children:(0,t.jsxs)(e.svg,{className:\"h-5 linkicon w-5\",fill:\"currentColor\",viewBox:\"0 0 20 20\",xmlns:\"http://www.w3.org/2000/svg\",children:[(0,t.jsx)(e.path,{d:\"M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z\"}),(0,t.jsx)(e.path,{d:\"M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z\"})]})})})}),\"Note\"]}),(0,t.jsx)(e.ul,{children:(0,t.jsx)(e.li,{children:\"The previous/next post links at bottom of the template are currently sorted by date. One could explore modifying the template to refer the reader to the previous/next post in the series, rather than by date.\"})})]})}function c(a={}){let{wrapper:e}=a.components||{};return e?(0,t.jsx)(e,{...a,children:(0,t.jsx)(h,{...a})}):h(a)}return v(M);})();\n;return Component;"
+        },
+        "_id": "blog/nested-route/introducing-multi-part-posts-with-nested-routing.mdx",
+        "_raw": {
+          "sourceFilePath": "blog/nested-route/introducing-multi-part-posts-with-nested-routing.mdx",
+          "sourceFileName": "introducing-multi-part-posts-with-nested-routing.mdx",
+          "sourceFileDir": "blog/nested-route",
+          "contentType": "mdx",
+          "flattenedPath": "blog/nested-route/introducing-multi-part-posts-with-nested-routing"
+        },
+        "type": "Blog",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.845,
+          "time": 50700,
+          "words": 169
+        },
+        "slug": "nested-route/introducing-multi-part-posts-with-nested-routing",
+        "path": "blog/nested-route/introducing-multi-part-posts-with-nested-routing",
+        "filePath": "blog/nested-route/introducing-multi-part-posts-with-nested-routing.mdx",
+        "toc": [
+          {
+            "value": "Nested Routes",
+            "url": "#nested-routes",
+            "depth": 1
+          },
+          {
+            "value": "How",
+            "url": "#how",
+            "depth": 2
+          },
+          {
+            "value": "Use Cases",
+            "url": "#use-cases",
+            "depth": 2
+          },
+          {
+            "value": "Note",
+            "url": "#note",
+            "depth": 2
+          }
+        ],
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Introducing Multi-part Posts with Nested Routing",
+          "datePublished": "2021-05-02T00:00:00.000Z",
+          "dateModified": "2021-05-02T00:00:00.000Z",
+          "description": "The blog template supports posts in nested sub-folders. This can be used to group posts of similar content e.g. a multi-part course. This post is itself an example of a nested route!",
+          "image": "/static/images/twitter-card.png",
+          "url": "https://tailwind-nextjs-starter-blog.vercel.app/blog/nested-route/introducing-multi-part-posts-with-nested-routing"
+        }
+      },
+      "documentHash": "1717087442573",
       "hasWarnings": false,
       "documentTypeName": "Blog"
     }

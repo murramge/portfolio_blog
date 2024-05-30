@@ -10,8 +10,8 @@ import blog__newFeaturesInV1Mdx from './blog__new-features-in-v1.mdx.json' asser
 import blog__picturesOfCanadaMdx from './blog__pictures-of-canada.mdx.json' assert { type: 'json' }
 import blog__releaseOfTailwindNextjsStarterBlogV2_0Mdx from './blog__release-of-tailwind-nextjs-starter-blog-v2.0.mdx.json' assert { type: 'json' }
 import blog__theTimeMachineMdx from './blog__the-time-machine.mdx.json' assert { type: 'json' }
-import blog__nestedRoute__introducingMultiPartPostsWithNestedRoutingMdx from './blog__nested-route__introducing-multi-part-posts-with-nested-routing.mdx.json' assert { type: 'json' }
 import blog__gonggam__introMdx from './blog__gonggam__intro.mdx.json' assert { type: 'json' }
 import blog__gonggam__one_pagesMdx from './blog__gonggam__one_pages.mdx.json' assert { type: 'json' }
+import blog__nestedRoute__introducingMultiPartPostsWithNestedRoutingMdx from './blog__nested-route__introducing-multi-part-posts-with-nested-routing.mdx.json' assert { type: 'json' }
 
-export const allBlogs = [blog__codeSampleMdx, blog__derivingOlsEstimatorMdx, blog__githubMarkdownGuideMdx, blog__guideToUsingImagesInNextjsMdx, blog__introducingTailwindNextjsStarterBlogMdx, blog__myFancyTitleMdx, blog__newFeaturesInV1Mdx, blog__picturesOfCanadaMdx, blog__releaseOfTailwindNextjsStarterBlogV2_0Mdx, blog__theTimeMachineMdx, blog__nestedRoute__introducingMultiPartPostsWithNestedRoutingMdx, blog__gonggam__introMdx, blog__gonggam__one_pagesMdx]
+export const allBlogs = [blog__codeSampleMdx, blog__derivingOlsEstimatorMdx, blog__githubMarkdownGuideMdx, blog__guideToUsingImagesInNextjsMdx, blog__introducingTailwindNextjsStarterBlogMdx, blog__myFancyTitleMdx, blog__newFeaturesInV1Mdx, blog__picturesOfCanadaMdx, blog__releaseOfTailwindNextjsStarterBlogV2_0Mdx, blog__theTimeMachineMdx, blog__gonggam__introMdx, blog__gonggam__one_pagesMdx, blog__nestedRoute__introducingMultiPartPostsWithNestedRoutingMdx]
