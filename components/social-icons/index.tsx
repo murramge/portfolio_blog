@@ -5,10 +5,10 @@ import {
   Youtube,
   Linkedin,
   Twitter,
+  X,
   Mastodon,
   Threads,
   Instagram,
-  Tistory,
 } from './icons'
 
 const components = {
@@ -18,10 +18,10 @@ const components = {
   youtube: Youtube,
   linkedin: Linkedin,
   twitter: Twitter,
+  x: X,
   mastodon: Mastodon,
   threads: Threads,
   instagram: Instagram,
-  tistory: Tistory,
 }
 
 type SocialIconProps = {
@@ -45,7 +45,7 @@ const SocialIcon = ({ kind, href, size = 8 }: SocialIconProps) => {
     >
       <span className="sr-only">{kind}</span>
       <SocialSvg
-        className={`fill-current text-gray-700 hover:text-maincolor dark:text-gray-200  dark:hover:text-primary-400 h-${size} w-${size}`}
+        className={`fill-current text-gray-700 hover:text-primary-500 dark:text-gray-200 dark:hover:text-primary-400 h-${size} w-${size}`}
       />
     </a>
   )

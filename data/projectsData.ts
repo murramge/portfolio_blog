@@ -1,8 +1,8 @@
 interface Project {
-  title: string,
-  description: string,
-  href?: string,
-  imgSrc?: string,
+  title: string
+  description: string
+  href?: string
+  imgSrc?: string
 }
 
 const projectsData: Project[] = [
@@ -12,7 +12,7 @@ const projectsData: Project[] = [
     and more. Google has many features to help you find exactly what you're looking
     for.`,
     imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    href: '/blog/gonggam/intro',
   },
   {
     title: 'The Time Machine',
