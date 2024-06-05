@@ -1,7 +1,7 @@
 import Image from './Image'
 import Link from './Link'
 
-const Card = ({ title, description, imgSrc, href }) => (
+const Card = ({ title, description, imgSrc, href, type, headCount, techStack, period }) => (
   <div className="md max-w-[544px] p-4 md:w-1/2">
     <div
       className={`${
@@ -38,14 +38,30 @@ const Card = ({ title, description, imgSrc, href }) => (
             title
           )}
         </h2>
+        <div className="flex justify-between pb-1 text-sm">
+          <div className="flex gap-2">
+            <p className="rounded-md bg-indigo-100 p-1">{type}</p>
+            <p className="rounded-md bg-gray-200 p-1 text-[11px]">{headCount}</p>
+          </div>
+          <p className="rounded-md bg-indigo-100 p-1">{period}</p>
+        </div>
+
         <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
+        <div className="mb-2 flex flex-wrap">
+          {techStack &&
+            techStack.map((tech, index) => (
+              <p key={index} className=" m-1 rounded-md bg-indigo-100 p-1 text-xs">
+                {tech}
+              </p>
+            ))}
+        </div>
         {href && (
           <Link
             href={href}
-            className="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+            className="text-md text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             aria-label={`Link to ${title}`}
           >
-            Learn more &rarr;
+            프로젝트 과정 보기 &rarr;
           </Link>
         )}
       </div>

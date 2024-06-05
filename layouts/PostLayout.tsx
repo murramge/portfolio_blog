@@ -31,7 +31,7 @@ interface LayoutProps {
 }
 
 export default function PostLayout({ content, authorDetails, next, prev, children }: LayoutProps) {
-  const { filePath, path, slug, date, title, tags } = content
+  const { filePath, path, slug, date, title, tags, summary } = content
   const basePath = path.split('/')[0]
   const Pathtast = path.split('/')[1]
   const Datas = listData.filter((item) => item.major === Pathtast)
@@ -54,6 +54,9 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
               </dl>
               <div>
                 <PageTitle>{title}</PageTitle>
+              </div>
+              <div>
+                <p>{summary}</p>
               </div>
             </div>
           </header>

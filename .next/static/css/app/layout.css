@@ -1297,6 +1297,9 @@ select {
 .-m-4 {
   margin: -1rem;
 }
+.m-1 {
+  margin: 0.25rem;
+}
 .-mx-2 {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
@@ -1527,6 +1530,9 @@ select {
 .justify-between {
   justify-content: space-between;
 }
+.gap-2 {
+  gap: 0.5rem;
+}
 .gap-3 {
   gap: 0.75rem;
 }
@@ -1687,6 +1693,10 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(34 197 94 / var(--tw-bg-opacity));
 }
+.bg-indigo-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 231 255 / var(--tw-bg-opacity));
+}
 .bg-primary-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(99 102 241 / var(--tw-bg-opacity));
@@ -1745,6 +1755,10 @@ select {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1781,6 +1795,12 @@ select {
 }
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 .pb-6 {
   padding-bottom: 1.5rem;
@@ -1838,6 +1858,9 @@ select {
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+.text-\[11px\] {
+  font-size: 11px;
 }
 .text-base {
   font-size: 1rem;
@@ -2125,6 +2148,10 @@ input:-webkit-autofill:focus {
 .linkicon {
   display: inline-block;
   vertical-align: middle;
+}
+
+.cursor-custom {
+  cursor: url('/static/images/cursor.png'), auto;
 }
 
 .dark\:prose-invert:is(.dark *) {
@@ -2421,6 +2448,11 @@ input:-webkit-autofill:focus {
     padding-bottom: 2rem;
   }
 
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -2497,6 +2529,15 @@ input:-webkit-autofill:focus {
     border-right-width: 2px;
   }
 
+  .md\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .md\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -2507,9 +2548,9 @@ input:-webkit-autofill:focus {
     line-height: 2rem;
   }
 
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .md\:text-6xl {
@@ -2560,6 +2601,10 @@ input:-webkit-autofill:focus {
 
   .xl\:block {
     display: block;
+  }
+
+  .xl\:flex {
+    display: flex;
   }
 
   .xl\:grid {
@@ -2628,6 +2673,10 @@ input:-webkit-autofill:focus {
     border-color: rgb(229 231 235 / var(--tw-border-opacity));
   }
 
+  .xl\:p-10 {
+    padding: 2.5rem;
+  }
+
   .xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -2636,6 +2685,11 @@ input:-webkit-autofill:focus {
   .xl\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .xl\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .xl\:pb-0 {
@@ -2652,6 +2706,11 @@ input:-webkit-autofill:focus {
 
   .xl\:pt-8 {
     padding-top: 2rem;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .xl\:dark\:divide-gray-700:is(.dark *) > :not([hidden]) ~ :not([hidden]) {

@@ -22,6 +22,10 @@ export default function Projects() {
                 title={d.title}
                 description={d.description}
                 imgSrc={d.imgSrc}
+                type={d.type}
+                headCount={d.headCount}
+                techStack={d.techStack}
+                period={d.period}
                 href={d.href}
               />
             ))}
