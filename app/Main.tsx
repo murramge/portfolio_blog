@@ -16,8 +16,18 @@ export default function Home({ posts }) {
           <div>
             <p className="pb-5 pt-2 text-2xl font-extrabold">Kangeunhwa</p>
             <div className="pb-5 text-gray-500 dark:text-gray-100">
-              <p>취미가 사이드프로젝트인,</p>
               <p>무언가 만들면서 개발하는 것이 취향인 개발자 입니다.</p>
+              <div className="flex gap-2 pt-5">
+                <a href="mailto:murramge@gmail.com" target="_blank">
+                  <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=Gmail&logoColor=white&link=mailto:murramge@gmail.com" />
+                </a>
+                <a href="https://coding-god-life.tistory.com/" target="_blank">
+                  <img src="https://img.shields.io/badge/Tistory-F46D01?style=flat-square&logo=tistory&logoColor=white" />
+                </a>
+                <a href="https://github.com/murramge" target="_blank">
+                  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white" />
+                </a>
+              </div>
             </div>
           </div>
           <div>
