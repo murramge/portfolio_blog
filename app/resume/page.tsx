@@ -101,7 +101,7 @@ export default function Resume() {
           </p>
         </div>
         <p className="w-15 pb-5 text-xl font-medium md:text-2xl xl:text-2xl">개발자로서의 목표</p>
-        <div className=" pt-5 text-base text-gray-500 dark:text-gray-100">
+        <div className=" text-base text-gray-500 dark:text-gray-100">
           <p>
             <Boldertext>첫 번째 </Boldertext>커뮤니티가 잘 되는 개발자가 되자.{' '}
           </p>
@@ -433,7 +433,7 @@ export default function Resume() {
         </div>
         <div className="flex gap-2 pt-5">
           <p className=" dark:text-gray-100">비디오 편집 웹사이트 (react)</p>
-          <Link href={`/blog/gonggam/intro`} target="_blank">
+          <Link href={`/blog/videoeditor/intro`} target="_blank">
             <p className="rounded-xl bg-primary-200 p-1 text-sm text-gray-600 hover:bg-primary-500 hover:text-white">
               상세보기
             </p>
@@ -441,7 +441,7 @@ export default function Resume() {
         </div>
         <div className="flex gap-2 pt-5">
           <p className=" dark:text-gray-100">캠핑투게더 앱 프로젝트 (react native)</p>
-          <Link href={`/blog/gonggam/intro`} target="_blank">
+          <Link href={`/blog/camping/intro`} target="_blank">
             <p className="rounded-xl bg-primary-200 p-1 text-sm text-gray-600 hover:bg-primary-500 hover:text-white">
               상세보기
             </p>
@@ -449,7 +449,7 @@ export default function Resume() {
         </div>
         <div className="flex gap-2 pt-5">
           <p className=" dark:text-gray-100">가족 앱 프로젝트 (android studio)</p>
-          <Link href={`/blog/gonggam/intro`} target="_blank">
+          <Link href={`/blog/familyapp/intro`} target="_blank">
             <p className="rounded-xl bg-primary-200 p-1 text-sm text-gray-600 hover:bg-primary-500 hover:text-white">
               상세보기
             </p>
@@ -457,7 +457,7 @@ export default function Resume() {
         </div>
         <div className="flex gap-2 py-5">
           <p className=" dark:text-gray-100">socket을 이용한 채팅 사이트 구현 (socket, node.js)</p>
-          <Link href={`/blog/gonggam/intro`} target="_blank">
+          <Link href={`/blog/chatting/intro`} target="_blank">
             <p className="rounded-xl bg-primary-200 p-1 text-sm text-gray-600 hover:bg-primary-500 hover:text-white">
               상세보기
             </p>
@@ -546,9 +546,17 @@ export default function Resume() {
           <li className="pb-1">안양대학교 아리멘토링 멘토 활동 (2020.03-2020.06)</li>
         </ul>
         <p className="w-15 pb-1 pt-5 font-medium text-primary-400">발표</p>
-        <p className="text-sm text-gray-600 dark:text-gray-100">
-          프론트엔드 데브코스 클라우딩 웹 앱 엔지니어링 2기 미니세션 - 찍어먹어보는 테스트 코드
-        </p>
+        <div className="text-sm text-gray-600 dark:text-gray-100">
+          <Link
+            href={`https://youtu.be/nDhqPXi7W30?t=22`}
+            target="_blank"
+            className="text-sm text-gray-600 underline underline-offset-2 hover:text-primary-300 dark:text-gray-100"
+          >
+            <p>
+              프론트엔드 데브코스 클라우딩 웹 앱 엔지니어링 2기 미니세션 - 찍어먹어보는 테스트 코드
+            </p>
+          </Link>
+        </div>
         <p className="w-15 pt-5 font-medium text-primary-400">자격증</p>
         <p className="text-sm text-gray-600 dark:text-gray-100">정보처리기사 필기 합격 (2023.07)</p>
         <p className="w-15 pb-1 pt-5 font-medium text-primary-400">스터디</p>
