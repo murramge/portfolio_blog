@@ -61,7 +61,7 @@ const Card = ({ title, description, imgSrc, href, type, headCount, techStack, pe
             className="text-md text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             aria-label={`Link to ${title}`}
           >
-            프로젝트 과정 보기 &rarr;
+            프로젝트 상세보기 &rarr;
           </Link>
         )}
       </div>

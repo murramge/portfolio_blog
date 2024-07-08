@@ -15,6 +15,7 @@ const editUrl = (path) => `${siteMetadata.siteRepo}/blob/main/data/${path}`
 const discussUrl = (path) =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(`${siteMetadata.siteUrl}/${path}`)}`
 
+console.log(editUrl, discussUrl)
 const postDateTemplate: Intl.DateTimeFormatOptions = {
   weekday: 'long',
   year: 'numeric',
@@ -35,6 +36,8 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
   const basePath = path.split('/')[0]
   const Pathtast = path.split('/')[1]
   const Datas = listData.filter((item) => item.major === Pathtast)
+
+  console.log(basePath)
   return (
     <SectionContainer>
       <ScrollTopAndComment />
@@ -60,23 +63,26 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
               </div>
             </div>
           </header>
-          <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:grid xl:grid-cols-3 xl:gap-x-6 xl:divide-y-0">
-            {/* <dl className="pb-10 pt-6 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
-              <dt className="sr-only">Authors</dt>
-              <dd>
-                <ul className=" xl:block ">
-                  {Datas.map((items, index) => (
-                    <li key={index}>
-                      <dl className="whitespace-nowrap text-sm font-medium leading-5">
-                        <dd>
-                          <Link href={`${items.url}`}>{items.title}</Link>
-                        </dd>
-                      </dl>
-                    </li>
-                  ))}
-                </ul>
-              </dd>
-            </dl> */}
+          <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 dark:divide-gray-700">
+            {Pathtast === 'etc' && (
+              <dl className=" pb-10 pt-6 text-center xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
+                <dt className="sr-only">Authors</dt>
+                <dd>
+                  <ul className=" xl:block ">
+                    {Datas.map((items, index) => (
+                      <li key={index}>
+                        <dl className="whitespace-nowrap pt-2 text-sm font-medium leading-5 hover:text-primary-500">
+                          <dd>
+                            <Link href={`${items.url}`}>{items.title}</Link>
+                          </dd>
+                        </dl>
+                      </li>
+                    ))}
+                  </ul>
+                </dd>
+              </dl>
+            )}
+
             <div className="items-center justify-center divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-2 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pb-8 pt-10 dark:prose-invert">{children}</div>
               <div className="pb-6 pt-6 text-sm text-gray-700 dark:text-gray-300">

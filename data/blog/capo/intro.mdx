@@ -1,7 +1,190 @@
 ---
-title: 포카 어플리케이션을 소개합니다 :)
-date: '2021-05-02'
-summary: 'The blog template supports posts in nested sub-folders. This can be used to group posts of similar content e.g. a multi-part course. This post is itself an example of a nested route!'
+title: Capo - 포토카드 거래 웹 사이트를 소개합니다.
+date: '2024-01'
+summary: Capo는 포토카드 거래를 위한 온라인 플랫폼으로, 다양한 아이돌과 캐릭터의 포토카드를 손쉽게 거래할 수 있도록 안전한 거래환경을 제공하는 거래 웹 사이트 입니다.
 ---
 
-안녕하세요?
+평소에 덕질 문화에 관심이 많아 포토카드를 양도하고, 판매할 상황이 꽤 많은데 보통은 커뮤니티나 물론 다른 중고거래 사이트들에서도 포토카드 / 굿즈를 판매하긴 하지만 좀 더 편리하고 포토카드만을 위한 거래 사이트가 있으면 참 좋겠다는 생각을 했다.
+
+## 자세한 프로젝트 개발 과정
+
+[포토카드 거래 프로젝트 - 화면 구성 / next.js에 관해서](https://coding-god-life.tistory.com/94)
+
+## 팀원 목록
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">
+        <b>
+          <a href="https://github.com/murramge">강은화 (frontend)</a>
+        </b>
+      </th>
+      <th align="center">
+        <b>
+          <a href="https://github.com/hanseu9839">한승균 (backend) </a>
+        </b>
+      </th>
+      <th align="center">
+        <b>
+          <a href="/capo/intro">여하은 (디자이너)</a>
+        </b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/murramge">
+          <img src="https://avatars.githubusercontent.com/u/60298173?v=4" width="100px" />
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/hanseu9839">
+          <img src="https://avatars.githubusercontent.com/u/74501208?v=4" width="100px" />
+        </a>
+      </td>
+      <td align="center">
+        <a href="/blog/capo/intro">
+          <img src="https://avatars.githubusercontent.com/u/74501208?v=4" width="100px" />
+        </a>
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+#### 실행방법
+
+[포토카드 사이트✨](https://photocard.site/)
+
+test id / password
+
+<div>id : test123</div>
+<div>password : Test1234!</div>
+
+## 프로젝트 상세 설명
+
+![스크린샷 2024-07-09 06 43 39](https://github.com/murramge/capo_project_front/assets/60298173/6e61720e-a7fa-45d7-a710-b95367f43e80)
+
+auth 화면으로 로그인 / 소셜로그인을 할 수 있습니다. 처음 열었을 때, 로그인 유도를 위해 첫 화면으로 배치 해 주었습니다.
+현재 소셜로그인은 카카오, 구글로 정상작동 확인하였습니다.
+화면에서 하트가 3초 간격마다 랜덤한 위치로 나오는 디자인을 해주었습니다. opacity를 0으로 주고 settimeout으로 3초마다 opacity를 1로 해주며, 차례차례 하트가 나오도록 만들어 주었습니다.
+
+![스크린샷 2024-07-09 06 42 47](https://github.com/murramge/capo_project_front/assets/60298173/14146e48-1d3c-4305-8980-6e5a50db59b1)
+![스크린샷 2024-07-09 06 43 06](https://github.com/murramge/capo_project_front/assets/60298173/8f701923-f075-4080-b872-4e5a1753748c)
+
+multi-step-form으로 회원가입을 구현했습니다. 유효성 검사는 zod를 통해 각각 유효한 스키마를 작업하여서 아이디, 비밀번호, 비밀번호확인, 휴대폰 번호의 유효성을 검사하고, 그 다음 step인 이메일, 인증하기 또한 유효성을 검사하여 주었습니다.
+그리고 아이디 중복 방지를 위해 아이디 중복확인을 해야만 form이 넘어가도록 구현하고, 이메일 인증도, 이메일 인증을 꼭 해야만 form이 넘어가도록 구현하였습니다.
+
+![스크린샷 2024-07-09 06 42 10](https://github.com/murramge/capo_project_front/assets/60298173/a6e45393-3afd-4751-b663-f6962302563a)
+
+회원가입이 성공적으로 완료가 되면, welcome capo 페이지가 나옵니다. 아이디를 통해 환영인사를 구현해주었습니다.
+
+![스크린샷 2024-07-09 06 44 45](https://github.com/murramge/capo_project_front/assets/60298173/178896e6-a134-45fa-b45f-4b7e84508dd4)
+
+포토카드 판매하기 페이지 입니다. 밑에는 흐르는 텍스트 효과로 sales footer를 구현하였습니다. tailwind 에서 애니메이션을 달아서 from, to로 translateX 축을 이동하도록 만들었습니다.
+
+![스크린샷 2024-07-09 07 05 58](https://github.com/murramge/capo_project_front/assets/60298173/0f990a37-b731-49f7-aaf0-d30e83a8100c)
+
+이미지를 화면안에 추가했을 때, 미리보기에서 이미지 화면의 숫자를 넣어주어 몇번째 이미지인지 확인할 수 있도록 해주고 첫번째 화면이 대표사진이 되게 하였습니다.
+또한 판매하기, 교환하기, 나눔하기에서 교환하기, 나눔하기 라면 판매액을 적지 못하도록 막아두었습니다. 여기 있는 판매하기 또한 zod를 사용하여 스키마를 구현하여 유효성 검사를 해주었습니다. 카테고리 같은 경우나, 가격 같은 경우에서 다른 값이 못들어오도록 해 주었습니다.
+
+![스크린샷 2024-07-09 06 44 14](https://github.com/murramge/capo_project_front/assets/60298173/40ffe63e-1815-468f-80b3-00c748629187)
+
+처음 메인 화면입니다. 데이터를 불러오기 까지 loading 상태일 때 보여주는 화면입니다. 로딩 스켈레톤은 로딩되는 시점에 보여지도록 공통화 하였습니다.
+
+![스크린샷 2024-07-09 07 08 36](https://github.com/murramge/capo_project_front/assets/60298173/7b7ddb86-52f5-49ce-915f-806231971b99)
+
+방금전에 판매한 사진이 올라간 모습입니다. 총 4개씩 보여주도록 구현하였습니다. 보이그룹 걸그룹 카테고리, 최신순 정렬순 카테고리 필터링이 되도록 구현하여 주었습니다.
+
+![스크린샷 2024-07-09 07 15 03](https://github.com/murramge/capo_project_front/assets/60298173/4312d16b-f92d-4b83-8f28-f3cb0ac6ec58)
+
+포토카드 상세 화면입니다.
+
+![스크린샷 2024-07-09 07 18 07](https://github.com/murramge/capo_project_front/assets/60298173/c9c69f67-8eda-47ca-a32e-f19b537841f0)
+
+상단 헤더에 검색어를 입력하면, 검색한 포토카드 카드 view가 뜨도록 하였습니다. 같은 상태관리로 사용되면 좋을 것 같아서 zustand로 각각 동일한 photocardstore의 상태관리를 사용하여 store 자체에서 api를 호출해주는 방식으로 구현을 해주었습니다. 그렇기에 카드 관련해서 정렬을 하는 행동, 검색을 하는 행동 카드 view가 보여져야 하는 행동들에 관해서는 같은 상태관리를 공유하여 함수에 따라 다른 api 호출만 해주고 같은 상태관리를 해줍니다.
+
+## 폴더구조
+
+```
+📦pages
+ ┣ 📂auth
+ ┃ ┣ 📜login.tsx
+ ┃ ┗ 📜register.tsx
+ ┣ 📂photocard
+ ┃ ┣ 📂mystore
+ ┃ ┃ ┗ 📜index.tsx
+ ┃ ┣ 📂sales
+ ┃ ┃ ┗ 📜index.tsx
+ ┃ ┗ 📜[slug].tsx
+ ┣ 📜_app.tsx
+ ┣ 📜_document.tsx
+ ┗ 📜index.tsx
+```
+
+next.js를 사용하기에 pages를 src 폴더 밖으로 빼고 사용을 해주었습니다.
+
+```
+📦src
+ ┣ 📂api
+ ┃ ┣ 📜CreatePhotoCardApi.ts
+ ┃ ┣ 📜DetailPhotoCardApi.ts
+ ┃ ┣ 📜GetPhotoCardListApi.ts
+ ┃ ┣ 📜ImageUploadApi.ts
+ ┃ ┣ 📜createUserApi.ts
+ ┃ ┗ 📜loginUserApi.ts
+ ┣ 📂components
+ ┃ ┣ 📂Account
+ ┃ ┃ ┣ 📂RegisterStep
+ ┃ ┃ ┃ ┣ 📜RegisterLastStep.tsx
+ ┃ ┃ ┃ ┣ 📜RegisterOneStep.tsx
+ ┃ ┃ ┃ ┗ 📜RegisterTwoStep.tsx
+ ┃ ┃ ┣ 📜Introduce.tsx
+ ┃ ┃ ┣ 📜LoginForm.tsx
+ ┃ ┃ ┣ 📜SocialLogin.tsx
+ ┃ ┃ ┗ 📜WelcomeCapo.tsx
+ ┃ ┣ 📂common
+ ┃ ┃ ┣ 📂header
+ ┃ ┃ ┃ ┣ 📜AuthHeader.tsx
+ ┃ ┃ ┃ ┗ 📜UnAuthHeader.tsx
+ ┃ ┃ ┗ 📜Loading.tsx
+ ┃ ┣ 📂detail
+ ┃ ┃ ┣ 📜CardView.tsx
+ ┃ ┃ ┗ 📜CategoryCardListView.tsx
+ ┃ ┣ 📂layouts
+ ┃ ┃ ┣ 📜AccountLayout.tsx
+ ┃ ┃ ┣ 📜DetailLayout.tsx
+ ┃ ┃ ┣ 📜MainLayout.tsx
+ ┃ ┃ ┣ 📜RegisterLayout.tsx
+ ┃ ┃ ┗ 📜SalesLayout.tsx
+ ┃ ┣ 📂main
+ ┃ ┃ ┣ 📜CardView.tsx
+ ┃ ┃ ┣ 📜Category.tsx
+ ┃ ┃ ┗ 📜SortCategory.tsx
+ ┃ ┗ 📂sales
+ ┃ ┃ ┣ 📜ImageUpload.tsx
+ ┃ ┃ ┣ 📜SalesFooter.tsx
+ ┃ ┃ ┣ 📜SalesForm.tsx
+ ┃ ┃ ┗ 📜SalesPageHeader.tsx
+ ┣ 📂hooks
+ ┃ ┣ 📜logout.ts
+ ┃ ┗ 📜useAuthGuard.ts
+ ┗ 📂utils
+ ┃ ┣ 📜LoginSchema.ts
+ ┃ ┣ 📜ProductSchema.ts
+ ┃ ┣ 📜RegisterSchema.ts
+ ┃ ┣ 📜constants.ts
+ ┃ ┣ 📜loginInputMappings.ts
+ ┃ ┣ 📜registerInputMappings.ts
+ ┃ ┗ 📜store.ts
+```
+
+전반적인 src 폴더입니다. component들을 페이지별로 구분해주었고, layouts 폴더 안에 각각의 레이아웃들을 잡아주는 컴포넌트 역할을 하도록 하여, 실질적인 본 페이지에서는 layouts 안의 폴더만 사용하면 되도록 구현해주었습니다.
+로그아웃이나 토큰을 통하여 로그인 유무를 가려 헤더를 변경하는 useAuthGuard 코드들은 공통 hooks 폴더에 구성하였고, 유효성을 잡아주는 schema들과 코드를 클린하게 해주는 상수들, 반복되는 로그인, 회원가입 input에 관한 Text 데이터들, 상태 관리 할 store로 utils 폴더가 구성되어 있습니다. 주로 외부 라이브러리나 공통으로 사용하는 변수, 데이터를 담고 있습니다.
+
+## github
+
+[github](https://github.com/murramge/capo_project_front/)

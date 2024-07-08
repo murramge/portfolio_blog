@@ -312,7 +312,8 @@ export default function Resume() {
             Zustand를 이용한 판매 상품 전역 상태관리. 적절한 카테고리 필터링 구현
           </p>
           <p className="pb-5 text-gray-600 dark:text-gray-100">
-            docker를 통해 backend와 같이 Front 배포
+            tailwind animate 기능을 적극 활용하여, 3초간 랜덤하게 하트가 생성되는 페이지, 흐르는
+            텍스트, 움직이는 로딩 스켈레톤 등 다양하게 구현
           </p>
           <p className="pb-5 text-gray-600 dark:text-gray-100">
             이 외에도 폴더 구조, 공통 컴포넌트 구현
@@ -421,27 +422,10 @@ export default function Resume() {
             다양한 사이드 프로젝트를 진행하였습니다.
           </p>
         </div>
-        <div className="flex gap-2 pt-5">
-          <p className=" dark:text-gray-100">
-            오픈소스 포트폴리오 웹사이트 (next.js, react, tailwind.css)
-          </p>
-          <Link href={`/blog/gonggam/intro`} target="_blank">
-            <p className="rounded-xl bg-primary-200 p-1 text-sm text-gray-600 hover:bg-primary-500 hover:text-white">
-              상세보기
-            </p>
-          </Link>
-        </div>
-        <div className="flex gap-2 pt-5">
-          <p className=" dark:text-gray-100">비디오 편집 웹사이트 (react)</p>
-          <Link href={`/blog/videoeditor/intro`} target="_blank">
-            <p className="rounded-xl bg-primary-200 p-1 text-sm text-gray-600 hover:bg-primary-500 hover:text-white">
-              상세보기
-            </p>
-          </Link>
-        </div>
+
         <div className="flex gap-2 pt-5">
           <p className=" dark:text-gray-100">캠핑투게더 앱 프로젝트 (react native)</p>
-          <Link href={`/blog/camping/intro`} target="_blank">
+          <Link href={`/blog/etc/camping/intro`} target="_blank">
             <p className="rounded-xl bg-primary-200 p-1 text-sm text-gray-600 hover:bg-primary-500 hover:text-white">
               상세보기
             </p>
@@ -449,7 +433,15 @@ export default function Resume() {
         </div>
         <div className="flex gap-2 pt-5">
           <p className=" dark:text-gray-100">가족 앱 프로젝트 (android studio)</p>
-          <Link href={`/blog/familyapp/intro`} target="_blank">
+          <Link href={`/blog/etc/familyapp/intro`} target="_blank">
+            <p className="rounded-xl bg-primary-200 p-1 text-sm text-gray-600 hover:bg-primary-500 hover:text-white">
+              상세보기
+            </p>
+          </Link>
+        </div>
+        <div className="flex gap-2 pt-5">
+          <p className=" dark:text-gray-100">비디오 편집 웹사이트 (react)</p>
+          <Link href={`/blog/etc/videoeditor/intro`} target="_blank">
             <p className="rounded-xl bg-primary-200 p-1 text-sm text-gray-600 hover:bg-primary-500 hover:text-white">
               상세보기
             </p>
@@ -457,7 +449,7 @@ export default function Resume() {
         </div>
         <div className="flex gap-2 py-5">
           <p className=" dark:text-gray-100">socket을 이용한 채팅 사이트 구현 (socket, node.js)</p>
-          <Link href={`/blog/chatting/intro`} target="_blank">
+          <Link href={`/blog/etc/chatting/intro`} target="_blank">
             <p className="rounded-xl bg-primary-200 p-1 text-sm text-gray-600 hover:bg-primary-500 hover:text-white">
               상세보기
             </p>
