@@ -11,13 +11,13 @@ interface Work {
 
 const workData: Work[] = [
   {
-    title: 'murmur 관리자 페이지 개발',
-    description: `murmur 관리자 페이지 개발`,
+    title: 'murmur 학습 관리자 페이지(LMS)',
+    description: `murmur 학습 관리자 페이지(LMS)`,
     imgSrc: '/static/images/punchylab_logo.jpg',
-    type: '회사 프로젝트',
-    headCount: '1명',
+    type: 'Work Project',
+    headCount: 'Front-end 1명',
     techStack: ['react', 'typescript', 'graphql', 'Github Actions'],
-    period: '2024.07-',
+    period: '2024.08-',
     href: '/blog/punchylab/playground/intro',
   },
 ]

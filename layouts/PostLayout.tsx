@@ -45,7 +45,6 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
   const router = useRouter()
   const { filePath, path, slug, date, title, tags, summary, images } = content
 
-    console.log(images)
   const basePath = path.split('/')[0]
   const Pathtast = path.split('/')[1]
   const Datas = listData.filter((item) => item.major === Pathtast)
