@@ -55,9 +55,9 @@ const ThemeSwitch = () => {
   return (
     <div className="mr-5">
       <Menu as="div" className="relative inline-block text-left">
-        <div>
-          <Menu.Button>{resolvedTheme === 'dark' ? <Moon /> : <Sun />}</Menu.Button>
-        </div>
+        <Menu.Button className="w-full">
+          {resolvedTheme === 'dark' ? <Moon /> : <Sun />}
+        </Menu.Button>
         <Transition
           as={Fragment}
           enter="transition ease-out duration-100"
@@ -70,8 +70,8 @@ const ThemeSwitch = () => {
           <Menu.Items className="absolute right-0 z-50 mt-2 w-32 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-gray-800">
             <RadioGroup value={theme} onChange={setTheme}>
               <div className="p-1">
-                <RadioGroup.Option value="light">
-                  <Menu.Item>
+                <RadioGroup.Option value="light" className="w-full">
+                  <Menu.Item as="div" className="w-full">
                     <button className="group flex w-full items-center rounded-md px-2 py-2 text-sm">
                       <div className="mr-2">
                         <Sun />
@@ -80,8 +80,8 @@ const ThemeSwitch = () => {
                     </button>
                   </Menu.Item>
                 </RadioGroup.Option>
-                <RadioGroup.Option value="dark">
-                  <Menu.Item>
+                <RadioGroup.Option value="dark" className="w-full">
+                  <Menu.Item as="div" className="w-full">
                     <button className="group flex w-full items-center rounded-md px-2 py-2 text-sm">
                       <div className="mr-2">
                         <Moon />
@@ -90,8 +90,8 @@ const ThemeSwitch = () => {
                     </button>
                   </Menu.Item>
                 </RadioGroup.Option>
-                <RadioGroup.Option value="system">
-                  <Menu.Item>
+                <RadioGroup.Option value="system" className="w-full">
+                  <Menu.Item as="div" className="w-full">
                     <button className="group flex w-full items-center rounded-md px-2 py-2 text-sm">
                       <div className="mr-2">
                         <Monitor />
