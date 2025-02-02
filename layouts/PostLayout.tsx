@@ -41,16 +41,11 @@ interface LayoutProps {
   children: ReactNode
 }
 
-const images = [
-  'https://github-production-user-asset-6210df.s3.amazonaws.com/60298173/408881815-3b1626fa-417e-4765-b7c3-37013e8ed545.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250202%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250202T172614Z&X-Amz-Expires=300&X-Amz-Signature=183ff1fe334e4ef87dc40f4d2fb52efddee50e523054213979568977c0c9ee81&X-Amz-SignedHeaders=host',
-  'https://github-production-user-asset-6210df.s3.amazonaws.com/60298173/408881815-3b1626fa-417e-4765-b7c3-37013e8ed545.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250202%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250202T172614Z&X-Amz-Expires=300&X-Amz-Signature=183ff1fe334e4ef87dc40f4d2fb52efddee50e523054213979568977c0c9ee81&X-Amz-SignedHeaders=host',
-  'https://github-production-user-asset-6210df.s3.amazonaws.com/60298173/408876109-f3d0075f-fd04-49f7-8de7-5506b6db441f.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250202%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250202T172818Z&X-Amz-Expires=300&X-Amz-Signature=5c528039b3ff63725c9750c6d52f340e2a28144007e93905aa85d2896a4df5a7&X-Amz-SignedHeaders=host',
-  'https://github-production-user-asset-6210df.s3.amazonaws.com/60298173/408881815-3b1626fa-417e-4765-b7c3-37013e8ed545.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250202%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250202T172614Z&X-Amz-Expires=300&X-Amz-Signature=183ff1fe334e4ef87dc40f4d2fb52efddee50e523054213979568977c0c9ee81&X-Amz-SignedHeaders=host',
-]
-
 export default function PostLayout({ content, authorDetails, next, prev, children }: LayoutProps) {
   const router = useRouter()
-  const { filePath, path, slug, date, title, tags, summary } = content
+  const { filePath, path, slug, date, title, tags, summary, images } = content
+
+    console.log(images)
   const basePath = path.split('/')[0]
   const Pathtast = path.split('/')[1]
   const Datas = listData.filter((item) => item.major === Pathtast)

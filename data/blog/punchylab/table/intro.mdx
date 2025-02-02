@@ -1,5 +1,48 @@
 ---
-title: 펀치랩 테이블
-date: '2024-05-03'
-summary: '데브코스를 진행하면서 캠핑투게더 어플리케이션을 구현하였습니다.'
+title: 학습 교육 통계,회원 관리,앱 관리 테이블
+date: '2024-10-01'
+summary: '학습 교육 통계, 회원 관리, 앱 관리 등 필요한 데이터를 한눈에 파악할 수 있도록, 사용자가 원하는 요소를 조합하여 구성할 수 있는 공통 테이블 컴포넌트 개발'
+images: [
+        "https://github.com/user-attachments/assets/6199a34e-af39-4165-8b6b-9a07901e3bc8",
+        "https://github.com/user-attachments/assets/c4ee9faf-f544-4307-a2c9-48cff7ef38d6",
+        "https://github.com/user-attachments/assets/7d1339c6-abdd-4534-8b6b-9a07901e3bc8",
+        "https://github.com/user-attachments/assets/77b616d9-091c-436f-aa31-ed183573653e",
+        "https://github.com/user-attachments/assets/e903b419-b13c-489c-87a5-3daaa16d80f2",
+        "https://github.com/user-attachments/assets/28e5b6a0-ca06-4895-9a1a-f07ae77cefaf",
+        "https://github.com/user-attachments/assets/b7c680e3-7436-4143-9c78-e3f79aba3755",
+        "https://github.com/user-attachments/assets/9115a4ba-d789-46bb-82bf-b53820cbd736",
+        "https://github.com/user-attachments/assets/775fff86-618a-4654-a470-2d4fa73e6b34",
+        "https://github.com/user-attachments/assets/3b1626fa-417e-4765-b7c3-37013e8ed545",
+      ]
 ---
+## 프로젝트 개요
+관리자 페이지에서 사용하는 모든 테이블을 공통 컴포넌트화 하여 데이터 관리 효율성과 사용자 경험 최적화를 목표로 설계 및 구현하였습니다. 이를 통해 학습 교육 통계, 회원 관리, 앱 관리 데이터를 한눈에 파악할 수 있도록 직관적인 UI와 동적 데이터 연동 기능을 제공하였습니다.
+
+## 주요 기능 및 역할
+### 1. 테이블 UI 설계 및 사용자 경험 최적화
+- 사용자 정의형 공통 컴포넌트 설계
+    - 컬럼 헤더, 서치바, 테이블 본문, 테이블 툴바를 모듈화하여 조합형 테이블 생성 가능.
+    - Search-Select를 기반으로 필터와 검색 기능을 사용자 맞춤형으로 제공.
+- UI 라이브러리 활용
+    - shadcn-ui 템플릿과 TailwindCSS를 사용해 시각적 일관성과 반응형 레이아웃 구현.
+### 2. 데이터 관리 효율성 강화
+- 정렬 및 필터 기능 구현
+    - 테이블 내 이력별 데이터 정렬 옵션 제공으로 데이터 탐색 용이성 향상.
+        - 1차 필터바: GraphQL의 where 절을 활용해 ID, userID 등을 기준으로 필터링.
+        - 2차 세부 필터바: 사용자 정의 조건 추가(Search-Select 기반).
+- Pagination 개선
+    - 기존 방식의 Prev, Next 버튼 기반 페이지네이션을 제거하고 무한 스크롤 방식 구현.
+    - GraphQL의 Cursor 기반 Pagination으로 필요한 데이터만 효율적으로 조회.
+### 3. 대규모 데이터 처리 및 최적화
+- GraphQL 데이터를 동적으로 렌더링하고 정렬 및 필터 최적화를 통해 12만 건 이상의 데이터도 빠르게 처리.
+- 스크롤 기반 데이터 로딩으로 페이지 전환 없이 연속 탐색 가능.
+### 4. 코드 구조 및 유지보수성 개선
+- 테이블 관련 폴더 및 파일의 네이밍 컨벤션 정립으로 코드 일관성 확보.
+- 공통 테이블 로직 리팩토링을 통해 재사용성과 유지보수성을 강화.
+- ESLint와 Prettier를 적용하여 클린 코드 작성 및 품질 유지.
+
+## 기술 스택
+- 프론트엔드: Typescript, React, TailwindCSS,
+- UI 라이브러리: shadcn-ui, Tanstack/table
+- 데이터 관리: GraphQL, Apollo Client
+
