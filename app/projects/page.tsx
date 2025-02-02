@@ -2,9 +2,10 @@
 import { useState } from 'react'
 import projectsData from '@/data/projectsData'
 import Card from '@/components/Card'
+import workData from '@/data/workData'
 
 export default function Projects() {
-  const [activeTab, setActiveTab] = useState('projects')
+  const [activeTab, setActiveTab] = useState('work')
 
   return (
     <>
@@ -17,20 +18,20 @@ export default function Projects() {
           {/* 탭 네비게이션 추가 */}
           <div className="flex space-x-4">
             <button
-              className={`px-4 py-2 ${
-                activeTab === 'projects' ? ' border-blue-500 text-blue-500' : 'text-gray-500'
-              }`}
-              onClick={() => setActiveTab('projects')}
-            >
-              Projects
-            </button>
-            <button
-              className={`px-4 py-2 ${
+              className={`px-4 py-2 text-3xl ${
                 activeTab === 'work' ? ' border-blue-500 text-blue-500' : 'text-gray-500'
               }`}
               onClick={() => setActiveTab('work')}
             >
               Work
+            </button>
+            <button
+              className={`px-4 py-2 text-3xl ${
+                activeTab === 'projects' ? 'border-blue-500 text-blue-500' : 'text-gray-500'
+              }`}
+              onClick={() => setActiveTab('projects')}
+            >
+              Projects
             </button>
           </div>
         </div>
@@ -54,8 +55,19 @@ export default function Projects() {
             </div>
           ) : (
             <div className="-m-4 flex flex-wrap">
-              {/* Work 탭 내용 */}
-              <div className="text-gray-500">Work 경력 내용이 들어갈 자리입니다.</div>
+              {workData.map((d) => (
+                <Card
+                  key={d.title}
+                  title={d.title}
+                  description={d.description}
+                  imgSrc={d.imgSrc}
+                  type={d.type}
+                  headCount={d.headCount}
+                  techStack={d.techStack}
+                  period={d.period}
+                  href={d.href}
+                />
+              ))}
             </div>
           )}
         </div>
