@@ -137,6 +137,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
               >
                 {images.map((image, index) => (
                   <SwiperSlide key={index}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={image}
                       alt={`Slide ${index + 1}`}
