@@ -21,7 +21,6 @@ const editUrl = (path) => `${siteMetadata.siteRepo}/blob/main/data/${path}`
 const discussUrl = (path) =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(`${siteMetadata.siteUrl}/${path}`)}`
 
-console.log(editUrl, discussUrl)
 const postDateTemplate: Intl.DateTimeFormatOptions = {
   weekday: 'long',
   year: 'numeric',
@@ -83,9 +82,9 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
             </div>
           </header>
           <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 dark:divide-gray-700">
-            {Pathtast === 'etc' && (
+            {(Pathtast === 'etc' || Pathtast === 'punchylab') && (
               <div className="pb-10 pt-6">
-                <div className="flex border-b border-gray-200 dark:border-gray-700">
+                <div className="flex justify-center  border-gray-200 dark:border-gray-700">
                   {Datas.map((item, index) => (
                     <button
                       key={index}
