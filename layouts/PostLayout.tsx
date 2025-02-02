@@ -55,12 +55,30 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
     window.location.replace(newUrl)
   }
 
-  console.log(basePath)
   return (
     <SectionContainer>
       <ScrollTopAndComment />
       <article>
         <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
+          {(Pathtast === 'etc' || Pathtast === 'punchylab') && (
+            <div className="pb-6">
+              <div className="flex justify-center border-gray-200 dark:border-gray-700">
+                {Datas.map((item, index) => (
+                  <button
+                    key={index}
+                    className={`px-4 py-2 ${
+                      item.url === activeTab
+                        ? 'border-b-2 border-primary-500 text-primary-500'
+                        : 'text-gray-500 hover:text-primary-500'
+                    }`}
+                    onClick={() => handleTabClick(item.url)}
+                  >
+                    {item.title}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
           <header className="pt-6 xl:pb-6">
             <div className="space-y-1 text-center">
               <dl className="space-y-10">
@@ -82,26 +100,6 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
             </div>
           </header>
           <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 dark:divide-gray-700">
-            {(Pathtast === 'etc' || Pathtast === 'punchylab') && (
-              <div className="pb-10 pt-6">
-                <div className="flex justify-center  border-gray-200 dark:border-gray-700">
-                  {Datas.map((item, index) => (
-                    <button
-                      key={index}
-                      className={`px-4 py-2 ${
-                        item.url === activeTab
-                          ? 'border-b-2 border-primary-500 text-primary-500'
-                          : 'text-gray-500 hover:text-primary-500'
-                      }`}
-                      onClick={() => handleTabClick(item.url)}
-                    >
-                      {item.title}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
-
             <div className="items-center justify-center divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-2 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pb-8 pt-10 dark:prose-invert">{children}</div>
               <div className="pb-6 pt-6 text-sm text-gray-700 dark:text-gray-300">

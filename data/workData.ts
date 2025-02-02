@@ -18,7 +18,7 @@ const workData: Work[] = [
     headCount: '1명',
     techStack: ['react', 'typescript', 'graphql', 'Github Actions'],
     period: '2024.07-',
-    href: '/blog/punchylab/boost/intro',
+    href: '/blog/punchylab/playground/intro',
   },
 ]
 
