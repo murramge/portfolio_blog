@@ -1,3 +1,6 @@
+'use strict'
+'use client'
+
 import { ReactNode } from 'react'
 import { CoreContent } from 'pliny/utils/contentlayer'
 import type { Blog, Authors } from 'contentlayer/generated'
@@ -10,6 +13,8 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import { listData } from '@/data/listData'
+import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 const editUrl = (path) => `${siteMetadata.siteRepo}/blob/main/data/${path}`
 const discussUrl = (path) =>
@@ -32,10 +37,23 @@ interface LayoutProps {
 }
 
 export default function PostLayout({ content, authorDetails, next, prev, children }: LayoutProps) {
+  const router = useRouter()
   const { filePath, path, slug, date, title, tags, summary } = content
   const basePath = path.split('/')[0]
   const Pathtast = path.split('/')[1]
   const Datas = listData.filter((item) => item.major === Pathtast)
+
+  // 현재 URL에서 활성 탭 찾기
+  const currentPath = path // 예: /blog/etc/familyapp/intro
+  const activeData = Datas.find((item) => currentPath.includes(item.url.split('/').slice(-2)[0]))
+  const [activeTab, setActiveTab] = useState(activeData?.url || Datas[0]?.url || '')
+
+  const handleTabClick = (url: string) => {
+    setActiveTab(url)
+    const baseUrl = window.location.origin
+    const newUrl = `${baseUrl}${url}`
+    window.location.replace(newUrl)
+  }
 
   console.log(basePath)
   return (
@@ -65,22 +83,23 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
           </header>
           <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 dark:divide-gray-700">
             {Pathtast === 'etc' && (
-              <dl className=" pb-10 pt-6 text-center xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
-                <dt className="sr-only">Authors</dt>
-                <dd>
-                  <ul className=" xl:block ">
-                    {Datas.map((items, index) => (
-                      <li key={index}>
-                        <dl className="whitespace-nowrap pt-2 text-sm font-medium leading-5 hover:text-primary-500">
-                          <dd>
-                            <Link href={`${items.url}`}>{items.title}</Link>
-                          </dd>
-                        </dl>
-                      </li>
-                    ))}
-                  </ul>
-                </dd>
-              </dl>
+              <div className="pb-10 pt-6">
+                <div className="flex border-b border-gray-200 dark:border-gray-700">
+                  {Datas.map((item, index) => (
+                    <button
+                      key={index}
+                      className={`px-4 py-2 ${
+                        item.url === activeTab
+                          ? 'border-b-2 border-primary-500 text-primary-500'
+                          : 'text-gray-500 hover:text-primary-500'
+                      }`}
+                      onClick={() => handleTabClick(item.url)}
+                    >
+                      {item.title}
+                    </button>
+                  ))}
+                </div>
+              </div>
             )}
 
             <div className="items-center justify-center divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-2 xl:row-span-2 xl:pb-0">
