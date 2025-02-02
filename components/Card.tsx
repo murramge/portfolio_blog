@@ -40,17 +40,26 @@ const Card = ({ title, description, imgSrc, href, type, headCount, techStack, pe
         </h2>
         <div className="flex justify-between pb-1 text-sm">
           <div className="flex gap-2">
-            <p className="rounded-md bg-indigo-100 p-1">{type}</p>
-            <p className="rounded-md bg-gray-200 p-1 text-[11px]">{headCount}</p>
+            <p className="rounded-md bg-indigo-100 p-1 dark:bg-indigo-900 dark:text-indigo-100">
+              {type}
+            </p>
+            <p className="rounded-md bg-gray-200 p-1 text-[11px] dark:bg-gray-800 dark:text-gray-100">
+              {headCount}
+            </p>
           </div>
-          <p className="rounded-md bg-indigo-100 p-1">{period}</p>
+          <p className="rounded-md bg-indigo-100 p-1 dark:bg-indigo-900 dark:text-indigo-100">
+            {period}
+          </p>
         </div>
 
         <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
         <div className="mb-2 flex flex-wrap">
           {techStack &&
             techStack.map((tech, index) => (
-              <p key={index} className=" m-1 rounded-md bg-indigo-100 p-1 text-xs">
+              <p
+                key={index}
+                className="m-1 rounded-md bg-indigo-100 p-1 text-xs dark:bg-indigo-900 dark:text-indigo-100"
+              >
                 {tech}
               </p>
             ))}
